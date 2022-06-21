@@ -1,0 +1,20 @@
+<!-- Quantidade de Letras que aparecem no alert.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome">
+    <input type="button" value="Exibir nome" id="btn-exibir-nome">
+
+    <script>
+        document.getElementById('btn-exibir-nome').addEventListener('click', function() {
+            const quantidadeLetras = document.getElementById('nome-completo').value;
+            alert("A quantidade de letras do seu nome é: " + quantidadeLetras.length);
+        });
+    </script>
+</body>
+</html>

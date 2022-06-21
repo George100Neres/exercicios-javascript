@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="atividade.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atividade 4</title>
+</head>
+            <!--Preenchimento dos dados  --> 
+  <body>
+    <fom> 
+
+        <div>
+            <input type="text" id="txNome" placeholder="Nome"/> 
+        </div>
+
+        <div>
+            <input type="submit" value="Nome Completo" onclick="validarTudo()"/> 
+        </div>
+
+    </fom>
+
+  </body>
+
+  <script>
+
+        // Validar os dados e ENviar
+function validarTudo() {
+    var nome = document.getElementById("txNome").value;
+
+    alert("O nome completo é"+nome);
+    alert(`${nome}`);
+}
+  </script>
+
+</html>
